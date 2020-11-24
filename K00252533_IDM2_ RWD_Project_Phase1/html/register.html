@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sign Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/signup.css">
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html" class="current">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="showTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+<br>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <br>
+    <p>Please fill in this form to create an account.</p>
+    <br>
+    <hr>
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <br>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+	<br>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer>
+ -->
+
+<footer>
+	<img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/allarticles.css">
+	<title>All Articles</title>
+</head>
+<body>
+	<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html" class="current">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="showTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+</script>
+
+<main>
+	  <div class="grid-container">
+
+	 <article class="image-list">
+      <a class="image-title" href="article1.html"><h1>Yakuza 7</h1></a>
+      <div class="article-images" id="yak7">
+        <img src="../images/yakuza7smaller.jpg" alt="Yakuza 7">
+      </div>
+    </article>
+
+    <article class="image-list">
+      <a class="image-title" href="#"><h1>Xbox Series X Launch!</h1></a>
+      <div class="article-images" id="console">
+        <img src="../images/xboxseriesx.jpg" alt="Xbox Series X">
+      </div>
+    </article>
+
+    <article class="image-list">
+      <a class="image-title" href="#"><h1>AC: Valhalla Launch!</h1></a>
+    <div class="article-images" id="acv">
+        <img src="../images/assassinscreed.jpg" alt="Assassin's Creed: Valhalla">
+    </div>
+    </article>
+
+    <article class="image-list">
+      <a class="image-title" href="https://www.crunchyroll.com/"><h1>Crunchyroll</h1></a>
+    <div class="article-images" id="advert">
+        <img src="../images/crunchyroll.jpg" alt="Assassin's Creed: Valhalla">
+    </div>
+    </article>
+
+    <article class="image-list">
+      <a class="image-title" href="#"><h1>Cyberflunk?!</h1></a>
+     <div class="article-images" id="cp">
+        <img src="../images/cyberpunk.jpg" alt="Cyberpunk">
+	</div>
+    </article>
+
+    <article class="image-list">
+      <a class="image-title" href="#"><h1>PlayStation 5 Launch!</h1></a>
+      <div class="article-images" id="console">
+        <img src="../images/playstation5.jpg" alt="PlayStation 5">
+      </div>
+    </article>
+
+    <article class="image-list">
+      <a class="image-title" href="#"><h1>Submit Your Own Article!</h1></a>
+      <div class="article-images">
+        <img src="../images/black.jpg" alt="Blank">
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer> -->
+
+<div class="footer">
+  <img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</div>
+
+
+</body>
+</html>

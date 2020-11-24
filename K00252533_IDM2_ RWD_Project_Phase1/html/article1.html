@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/article.css">
+	<title>Virtual City</title>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="displayTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+<main>
+	<article>
+
+		<figure>
+			<img id="mainimage" src="../images/YAKUZA7.jpg" alt="Yakuza 7 Cover">
+		</figure>
+		
+			<p>Yakuza: Like a Dragon will be released on November 10, and in case you didn't hear, it's really, really good. There's a lot of anticipation for Ryu Ga Gotoku Studio's next melodramatic-yet-goofy crime drama, but there are also a lot of Yakuza games that precede it. If you're planning to take a dive into the series but want to start with the latest entry, we've compiled a quick list of things you need to know about Like a Dragon and the Yakuza series at large before you begin your trip through Yokohama.</p>
+
+			<h2>This is a Great Entry Point</h2>
+
+			<p>Prior to Like a Dragon, there were seven mainline Yakuza games; samurai, zombie, and courtroom-based spin-off games; a Japan-only mobile game; a PSP game; and even a live-action movie by legendary Japanese director Takashi Miike and its straight-to-video prequel. We recommend you check out the large majority of them. But we also recognize the series has a lot of baggage. Starting with Yakuza 0, the chronological first game in the series' story, and working your way up to Like a Dragon would take hundreds and hundreds of hours.</p>
+
+			<p>In Japan, Like a Dragon is still dubbed Yakuza 7 (or Ryū ga Gotoku 7, if you want to be technical). Here in the States, the number has been dropped from the game's name – and that's actually an important detail. This is the first mainline game in the series to not focus on protagonist Kazuma Kiryu's story. Like a Dragon stars a new character, Ichiban Kasuga, as he tries to find out why his yakuza clan abandoned him after he took the fall for a murder (which is kind of the story of the very first Yakuza, but I digress). If you want to get technical again, this is actually the second game with Kasuga as the lead; he was the protagonist of Ryū ga Gotoku Online, released in Japan in 2018.</p>
+
+			<p>Like a Dragon is a mostly clean slate for interested players. Kasuga's story is his own, and the game even takes place in a new city, Yokohama. While longtime fans of the series will get some nods to earlier games here and there, anyone playing this as their first Yakuza game shouldn't have any trouble following the game's story.</p>
+		</article>
+
+</main>
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer> -->
+
+<footer>
+	<img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</footer>
+
+</body>
+</html>

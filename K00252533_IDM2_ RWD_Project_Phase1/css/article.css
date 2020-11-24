@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Gothic A1', sans-serif;
+	background-color: #212121;
+	width: 100%;
+	margin: auto;
+}
+
+header {
+	background-color: #121212;
+	color: #1db954;
+}
+
+nav img {
+	float: left;
+	width: 10%;
+	max-width: 40px;
+	min-width: 20px;
+}
+
+input[type=search] {
+	border-radius: 25px;
+	border: none;
+	background-color: #b3b3b3;
+	height: 20px;
+}
+
+
+nav {
+/*	color: #1db954;*/
+	background-color: #121212;
+	text-align: center;
+	position: relative;
+	z-index: 99999;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #1db954;
+}
+
+nav ul li {
+	list-style-type: none;
+	height: 40px;
+	line-height: 40px;
+	background-color: #121212;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+nav ul li ul li {
+	display: none;
+}
+
+nav > ul > li:hover ul li {
+	display: block;
+}
+
+nav ul li {
+	flex-basis: 20%;
+}
+
+nav ul li a:hover {
+	color: #535353;
+}
+
+.arrow {
+  border: solid #1db954;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.current {
+	color: #535353;
+}
+
+main {
+		margin-bottom: .2em;
+}
+
+#mainimage {
+	position: relative;
+	overflow: hidden;
+}
+
+#mainimage {
+	display: grid;
+	width: 95%;
+	height: 300px;
+	margin: auto;
+	object-fit: cover;
+	object-position: 30% 40%;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-column-gap: 10px;
+    /*grid-row-gap: 5px;*/
+    color: #1db954;
+/*    padding-bottom: 2.1em;*/
+	padding-bottom: 2em;
+}
+
+article p {
+	margin-bottom: 8.5px;
+}
+
+article > * {
+    grid-column: 2;
+    min-width: 0;
+}
+
+article > figure {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+}
+
+html, body {
+    line-height: 1.4;
+}
+
+/*footer {
+	background-color: #121212;
+	clear: both;
+	padding: 1.3em 2.93%;
+	margin-top: 27px;
+	position: relative;
+	text-align: center;
+}
+
+footer ul li {
+	list-style-type: none;
+	height: 20px;
+	line-height: 40px;
+	background-color: #121212;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+footer ul li {
+	flex-basis: 20%;
+}
+
+footer img {
+	float: left;
+	width: 10%;
+	max-width: 40px;
+	min-width: 20px;
+}
+
+footer li {
+	color: #1db954;
+}*/
+
+footer {
+   min-height: 0.2em;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #121212;
+   color: #1db954;
+   text-align: center;
+   padding: 0.2em 2.93%;
+   clear: both;
+}
+
+footer img {
+	float: left;
+	width: 10%;
+	width: 40px;
+	min-width: 20px;
+}
+ 
+footer p {
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
