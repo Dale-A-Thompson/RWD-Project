@@ -6,34 +6,37 @@
 	<link rel="icon" type="image/x-icon" href="../images/logo.png">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<title>Virtual City</title>
-<!-- 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
-	</style> -->
+	<link rel="stylesheet" type="text/css" href="../css/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#navbar').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
 </head>
 <body>
 <header>
+	<nav id="mobile_menu"></nav>
 	<nav id="navbar">
 		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
-
 		<ul>
 			<li><h2>Virtual City</h2></li>
 			<li><a href="index.html" class="current">Home</a></li>
 			<li><a href="allarticles.html">News</a></li>
 			<li><a href="about.html">About</a></li>
-				<li><a href="#">Profile <i class="arrow up"></i></a>
+			<li>Profile<i class="arrow up"></i>
 				<ul>
 					<li><a href="signin.html">Sign In</a></li>
 					<li><a href="register.html">Register</a></li>
 				</ul>
 			</li>
-						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
-						<li id="clock" onload="showTime()"></li>
+			<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+			<li id="clock" onload="showTime()"></li>
 		</ul>				
 
 	</nav>
-</header>
-
-<script>
+	<script>
 // Define a function to display the current time
 function displayTime() {
     let clock = document.querySelector("#clock"); // Get element with id="clock"
@@ -44,15 +47,26 @@ displayTime()                    // Display the time right away
 setInterval(displayTime, 1000);  // And then update it every second. 
 
 </script>
+</header>
 
-<main>
+
+<div class="mainarticle">
+<article class="image-list">
+      <a class="image-title" href="article1.html"><h5>Yakuza 7 Launches Worldwide!</h5></a>
+      <div class="article-images">
+        <img src="../images/YAKUZA7.jpg" alt="Xbox Series X">
+      </div>
+    </article>
+</div>
+
+<!-- <main id="mainarticle">
 	<img id="mainimage" src="../images/Yakuza7.jpg" alt="Yakuza 7 Cover">
 
 	<h3 id="imagetext">Yakuza 7 has released world-wide!</h3>
 
 	<form action="article1.html">
     	<input type="submit" value="Read More!"/>
-	</form>
+	</form> -->
 
 
 	<!-- <div id="readmore"><a href="article1.html"><button>Read More!</button></a></div> -->

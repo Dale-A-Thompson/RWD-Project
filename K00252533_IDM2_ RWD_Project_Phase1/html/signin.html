@@ -5,10 +5,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#navbar').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
 </head>
 <body>
 <header>
+	<nav id="mobile_menu"></nav>
 	<nav id="navbar">
 		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
 
@@ -55,8 +65,11 @@ setInterval(displayTime, 1000);  // And then update it every second.
     <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
 
     <label for="psw"><b>Password</b></label>
+    <div id="pswWrap">
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-        
+    	<i class="fas fa-eye eyeIcon"></i>
+    </div>
+
     <button type="submit">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -68,6 +81,27 @@ setInterval(displayTime, 1000);  // And then update it every second.
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
+
+<script>
+	const visToggle = document.querySelector('.eyeIcon');
+       
+        const input = document.querySelector('#pswWrap input');
+
+        var password = true; 
+        
+        visToggle.addEventListener('click', function(){
+            if (password) { 
+               input.setAttribute('type','text'); 
+                visToggle.classList.remove('fa-eye'); 
+                visToggle.classList.add('fa-eye-slash');
+            } else { 
+                input.setAttribute('type','password');
+                visToggle.classList.remove('fa-eye-slash');
+                visToggle.classList.add('fa-eye'); 
+            }
+            password = !password; 
+        });
+</script>
 <br>
 <!-- <footer>
 		<ul>

@@ -5,6 +5,40 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap');
 
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #navbar {
+        display: none;
+    }
+
+    #clock {
+    	display: none;
+    }
+
+    .arrow {
+    	display: none;
+    }
+
+    .slicknav.menu {
+        padding: 3px !important;
+    }
+
+    #mobile_menu {
+        display: block !important;
+    }
+}
+
+/*@media screen and (max-width: 479px) {
+    header h1, header h2, header h3, section {
+        font-size: small;
+    }
+}*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -41,46 +75,53 @@ input[type=search] {
 	height: 20px;
 }
 
+#mobile_menu {
+	display: none;
+}
 
 nav {
+	z-index: 99999;
+}
+
+#navbar {
 /*	color: #1db954;*/
 	background-color: #121212;
 	text-align: center;
 	position: relative;
-	z-index: 99999;
 }
 
-nav ul li a{
+#navbar ul li a{
 	text-decoration: none;
 	color: #1db954;
+
 }
 
-nav ul li {
+#navbar ul li {
 	list-style-type: none;
 	height: 40px;
 	line-height: 40px;
 	background-color: #121212;
 }
 
-nav > ul {
+#navbar > ul {
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
 }
 
-nav ul li ul li {
+#navbar ul li ul li {
 	display: none;
 }
 
-nav > ul > li:hover ul li {
+#navbar > ul > li:hover ul li {
 	display: block;
 }
 
-nav ul li {
+#navbar ul li {
 	flex-basis: 20%;
 }
 
-nav ul li a:hover {
+#navbar ul li a:hover {
 	color: #535353;
 }
 
@@ -101,53 +142,10 @@ nav ul li a:hover {
 }
 
 /*IMAGE STUFF*/
-#mainimage {
-	position: relative;
-	overflow: hidden;
-}
-
-#mainimage {
-	width: 100%;
+.mainarticle img{
 	height: 300px;
 	object-fit: none;
-	object-position: 30% 40%;
-	filter: blur(3px);
-}
-
-#imagetext {
-  	color: white;
-  	position: absolute;
-  	font-size: x-large;
-  	top: 20%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  	width: 80%;
-  	padding: 20px;
-  	text-align: center;
-}
-
-form {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-/*	height: 200px;*/
-	top: 25%;
-	left: 45%;
-}
-
-form input {
-	border: 1px;
-  	border-radius: 30px;
-  	color: #212121;
-  	background-color: #1db954;
-  	padding: 20px 40px;
-  	text-align: center;
-  	text-decoration: none;
-/*  	display: inline-block;*/
-  	font-size: 16px;
-  	margin: 4px 2px;
-  	cursor: pointer;
+	object-position: 45% 35%;
 }
 
 /*.imagerow {
