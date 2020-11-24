@@ -108,6 +108,42 @@ main {
 	object-position: 30% 40%;
 }
 
+#mainimage2 {
+	display: grid;
+	width: 95%;
+	height: 300px;
+	margin: auto;
+	object-fit: cover;
+	object-position: 50% 22%;
+}
+
+#mainimage3 {
+	display: grid;
+	width: 95%;
+	height: 300px;
+	margin: auto;
+	object-fit: cover;
+	object-position: 50% 8%;
+}
+
+#mainimage4 {
+	display: grid;
+	width: 95%;
+	height: 300px;
+	margin: auto;
+	object-fit: cover;
+	object-position: 50% 32%;
+}
+
+#mainimage5 {
+	display: grid;
+	width: 95%;
+	height: 300px;
+	margin: auto;
+	object-fit: cover;
+	object-position: 50% 90%;
+}
+
 article {
     display: grid;
     grid-template-columns: 40px 1fr 40px;

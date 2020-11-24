@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/article.css">
+	<title>Virtual City</title>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="displayTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+<main>
+	<article>
+
+		<figure>
+			<img id="mainimage5" src="../images/playstation5.jpg" alt="PlayStation 5 Console">
+		</figure>
+		
+			<p>After a generation of figuratively towering above its rivals with the monstrously successful PlayStation 4, one thing is certain: Sony’s next-generation contender will also loom large over its peers... literally. This thing is massive. However, what the PlayStation 5 lacks in subtlety it more than makes up for in potential, thanks in part to its amazingly fast SSD but mostly to its truly remarkable new controller, the DualSense.</p>
+
+			<p>PWhile a good deal of what folks are going to be able to squeeze out of 2020’s salvo of shiny new hardware may be bottlenecked to some degree by the screen that they own, the PS5’s unique DualSense democratises a next-gen gaming experience for all, delivering an amazing new level of haptic feedback that really needs to be felt to be believed.</p>
+
+			<p>Make no mistake: the austere and unceremonious nature of the box and packaging is in stark contrast to the PlayStation 5 itself, which is far and away the most flamboyant-looking console I’ve ever owned. Rather than a single shell, the PS5 appears to be made up of four separate pieces: a glossy, black case sandwiched between a pair of warped, matte-white plastic plates, with a detachable stand.</p>
+
+			<p>I’ll happily concede the PS5 does look a bit better in the flesh than it did in the initial product shots; the matte, off-white finish to the plates is actually a lot nicer than I feared it would be, and the sloping vents flanking the strip of glossy black plastic that wraps around the edge of the unit are eye-catching. The problem, to my eye, is that the gradually widening black strip on the front and the flappy, overhanging plastic corners makes the PS5 look a little bit like a piece of luggage that’s stuffed too full to zip up properly, and the irregular curves remind me more of a cassette that’s spent a hot summer day on a car dashboard than a PlayStation.</p>
+
+		</article>
+
+</main>
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer> -->
+
+<footer>
+	<img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/article.css">
+	<title>Virtual City</title>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="displayTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+<main>
+	<article>
+
+		<figure>
+			<img id="mainimage2" src="../images/xboxseriesx.jpg" alt="Xbox Series X Console">
+		</figure>
+		
+			<p>Microsoft’s Xbox Series X, the fourth iteration of the Xbox, may be the most powerful home entertainment system ever. It’s also at least two years ahead of its time.  The new Xbox brings more computational power than any console in history, yet no games that really necessitate that power. It’s like showing up to a party too early for fear of missing out.</p>
+
+			<p>For almost 20 years, Microsoft’s Xbox series has always tried to be ahead of the game. When the original Xbox debuted in November 2001, it was the most powerful unit in that sixth generation of consoles. It was also the very first video game system to feature an internal hard drive, which allowed it to eschew the memory cards needed for players to store their save data on other consoles, and — coupled with the console’s DVD player — also hinted at Microsoft’s goal of creating the ultimate home entertainment system. From day one, the dream was to fit games, movies, and music all in one (X)box.</p>
+
+			<p>The Series X feels like nothing less than the culmination of that dream, from design to operating system to unadulterated power. It may not reinvent the wheel, but the machine represents the logical destination of the trajectory that Microsoft has been charting in the video game world for the last two decades, and it fulfills the broad potential that Xbox loyalists have always seen in their brand of choice.</p>
+
+			<p>But Xbox’s need to prove its worth raises questions about the point of all that effort. Yes, you can play “optimized” versions of games like “Assassin’s Creed Valhalla” or “Cyberpunk 2077” — which certainly promise to run smoother and at higher frame rates — but whether that justifies the sticker shock is debatable.</p>
+
+			<p>Make no mistake: Once the future catches up with the present, this Xbox will be a marvel of graphic wizardry. And as an entertainment system, the Series X is essentially a faster, larger Amazon Fire TV Cube or Roku Ultra — that also happens to support the most bleeding edge video game tech. But there’s also something bittersweet about bumping up against the ceiling of what a console like this can do, and any celebration of the Xbox Series X comes pre-installed with the feeling that future returns might only diminish from here.</p>
+		</article>
+
+</main>
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer> -->
+
+<footer>
+	<img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</footer>
+
+</body>
+</html>

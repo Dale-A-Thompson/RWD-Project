@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/article.css">
+	<title>Virtual City</title>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="displayTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+<main>
+	<article>
+
+		<figure>
+			<img id="mainimage4" src="../images/cyberpunk.jpg" alt="Cyberpunk 2077 Cover">
+		</figure>
+		
+			<p>Cyberpunk 2077 is being delayed yet again, this time until December 10th. Developer CD Projekt Red says it’s still working on a launch day patch for the game, which was previously slated for November 19th. It attributes the delay partly to its multiplatform release — which will see the game launch across two generations of console hardware, PC, and Google Stadia.</p>
+
+			<p>“The biggest challenge for us right now is shipping the game on current-gen, next-gen, and PC at the same time, which requires us to prepare and test nine versions of it,” the company said in a tweet. “We need to make sure everything works well and every version runs smoothly. We’re aware it might seem unrealistic when someone says 21 days can make any difference in such a massive and complex game, but they really do.”</p>
+
+			<p>Cyberpunk 2077 officially went gold (i.e. locked a release version of the game) in early October, and the developers promised via Twitter that “no more delays are happening.” The release version is still finished, but CD Projekt Red has been developing further updates for the day of the game’s release. “This is the time period we under-calculated,” the tweet says — even after an unanticipated crunch period that’s seen developers working overtime.</p>
+
+			<p>Cyberpunk 2077 has been one of the most highly anticipated games of 2020. But with the latest delay, it’s going to be just squeaking in at the end of this year.</p>
+
+		</article>
+
+</main>
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer> -->
+
+<footer>
+	<img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</footer>
+
+</body>
+</html>

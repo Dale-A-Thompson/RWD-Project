@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../images/logo.png">
+	<link rel="stylesheet" type="text/css" href="../css/article.css">
+	<title>Virtual City</title>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
+
+		<ul>
+			<li><h2>Virtual City</h2></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="allarticles.html">News</a></li>
+			<li><a href="about.html">About</a></li>
+				<li><a href="#">Profile <i class="arrow up"></i></a>
+				<ul>
+					<li><a href="signin.html">Sign In</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</li>
+						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
+						<li id="clock" onload="displayTime()"></li>
+		</ul>				
+
+	</nav>
+</header>
+
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+
+
+<main>
+	<article>
+
+		<figure>
+			<img id="mainimage3" src="../images/assassinscreed.jpg" alt="Assassin's Creed: Valhalla Cover">
+		</figure>
+		
+			<p>There's a Viking belief that the paths we walk are predetermined, and that the threads of our lives are already woven like strands in a collective tapestry. Where your own thread encounters others, even where it ends, are points in history already sewn together by the Fates. But the Vikings also believed in an idea of free will, in the possibility to see the path prophecy might have chosen and the ability to resist it, to fight for your own destiny and the destinies of those whose lives you might touch. Such ideas run through the brilliant narrative of Assassin's Creed Valhalla and the life of its heroine Eivor, to lift this beautiful game into a saga for the ages.</p>
+
+			<p>A Viking-set Assassin's Creed is a perfect setting for a series which has always been obsessed by the ideas of order versus resistance, of Assassins versus Templars (or again here, in this third chapter set in ancient times, the Hidden Ones versus the Order of the Ancients). It's also a perfect setup for whatever kind of Assassin's Creed game you're looking for - one which involves some wonky sci-fi shenanigans and fun mythological elements or simply a 60-hour Viking tale about knocking English heads together.</p>
+
+			<p>Valhalla protagonist Eivor is a very likable Viking, a level-headed conqueror suddenly set on a path for England in search of a new home and in support of her clan. There was always going to be a tension between the popular view of Vikings as only raiders and pillagers rather than the settlers they were also - but Eivor's story and search for her own brand of peace smooths away this tension as much as possible. Over the course of her quest around the kingdoms, her task is to unite more than it is to divide - something underpinned by your regular returns to the settlement of Ravensthorpe, a place you'll help grow into a home for a diverse cast of characters. It's not perfect - smashing up monasteries simply to build huts in your hometown and only slaying soldiers, rather than monks, is pure video game logic - but as far as Valhalla's charismatic and wonderfully dry main character is concerned, Eivor does enough to carry the story through.</p>
+
+		</article>
+
+</main>
+<!-- <footer>
+		<ul>
+		<img src="../images/logo.png" alt="Virtual City Logo">
+		<li>&copy; Dale Thompson - K00252533</li>
+		<li>Email: K00252533@student.lit.ie</li>
+		</ul>	
+</footer> -->
+
+<footer>
+	<img src="../images/logo.png" alt="Virtual City Logo">
+  <p>&copy; Dale Thompson - K00252533</p>
+</footer>
+
+</body>
+</html>

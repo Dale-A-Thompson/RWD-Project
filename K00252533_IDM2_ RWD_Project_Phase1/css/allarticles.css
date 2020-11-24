@@ -234,7 +234,7 @@ footer li {
 	color: #1db954;
 }*/
 
-.footer {
+footer {
    position: fixed;
    left: 0;
    bottom: 0;
@@ -245,14 +245,14 @@ footer li {
    padding: .2em 2.93%;
 }
 
-.footer img {
+footer img {
 	float: left;
 	width: 10%;
 	width: 40px;
 	min-width: 20px;
 }
  
-.footer p {
+footer p {
 	margin-top: 10px;
 	margin-right: 25px;
 }
