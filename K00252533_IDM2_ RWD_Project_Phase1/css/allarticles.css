@@ -11,7 +11,7 @@
         display: none;
     }
 
-    #clock {
+    li #clock {
     	display: none;
     }
 
@@ -169,6 +169,7 @@ h2 {
   width: 95%;
   margin: auto;
   margin-top: 10px;
+  padding-bottom: 55px;
 }
 
 /* hover styles */

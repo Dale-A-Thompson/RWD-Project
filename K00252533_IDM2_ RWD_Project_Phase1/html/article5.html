@@ -17,6 +17,7 @@
 </head>
 <body>
 <header>
+	<nav id="mobile_menu"></nav>
 	<nav id="navbar">
 		<a class="logo-img" href="index.html"><img src="../images/logo.png" alt="Virtual City Logo"></a>
 
@@ -32,7 +33,7 @@
 				</ul>
 			</li>
 						<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
-						<li id="clock" onload="displayTime()"></li>
+						<li class="clock" id="clock" onload="showTime()"></li>
 		</ul>				
 
 	</nav>
@@ -47,7 +48,16 @@ function displayTime() {
 }
 displayTime()                    // Display the time right away
 setInterval(displayTime, 1000);  // And then update it every second. 
-
+</script>
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector(".clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
 </script>
 
 

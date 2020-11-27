@@ -32,7 +32,7 @@
 				</ul>
 			</li>
 			<li><input type="search" name="searchfield" id="searchfield" placeholder="Search..."></li>
-			<li id="clock" onload="showTime()"></li>
+			<li class="clock" id="clock" onload="showTime()"></li>
 		</ul>				
 
 	</nav>
@@ -45,7 +45,16 @@ function displayTime() {
 }
 displayTime()                    // Display the time right away
 setInterval(displayTime, 1000);  // And then update it every second. 
-
+</script>
+<script>
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector(".clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
 </script>
 </header>
 
@@ -71,7 +80,7 @@ setInterval(displayTime, 1000);  // And then update it every second.
 
 	<!-- <div id="readmore"><a href="article1.html"><button>Read More!</button></a></div> -->
 
-<br>
+<!-- <br> -->
 
 	<!-- <div class="imagerow">
 		<div><img src="images/xboxseriesx.jpg"></div>
@@ -103,13 +112,6 @@ setInterval(displayTime, 1000);  // And then update it every second.
     </article>
 
     <article class="image-list">
-      <a class="image-title" href="https://play.google.com/store/apps/details?id=com.plarium.raidlegends&hl=en_IE&gl=US"><h5>RAID: Shadow Legends</h5></a>
-    <div class="article-images">
-        <img src="../images/raid-shadow-legends.jpg" alt="RAID: Shadow Legends">
-    </div>
-    </article>
-
-    <article class="image-list">
       <a class="image-title" href="article4.html"><h5>Cyberflunk?!</h5></a>
      <div class="article-images">
         <img src="../images/cyberpunk.jpg" alt="Cyberpunk">
@@ -124,6 +126,14 @@ setInterval(displayTime, 1000);  // And then update it every second.
     </article>
 
   </div>
+<div class="advert">
+  <article class="image-list">
+      <a class="image-title" href="https://play.google.com/store/apps/details?id=com.plarium.raidlegends&hl=en_IE&gl=US"><h5>RAID: Shadow Legends</h5></a>
+    <div class="article-images">
+        <img src="../images/raid-header.jpg" alt="RAID: Shadow Legends">
+    </div>
+    </article>
+</div>
 </main>
 
 <br>

@@ -31,6 +31,15 @@
     #mobile_menu {
         display: block !important;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(85px, 1fr));
+        grid-gap: .95em;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        padding-bottom: 55px;    }
 }
 
 /*@media screen and (max-width: 479px) {
@@ -143,9 +152,15 @@ nav {
 
 /*IMAGE STUFF*/
 .mainarticle img{
-	height: 300px;
+	height: 250px;
 	object-fit: none;
 	object-position: 45% 35%;
+  padding-bottom: 25px
+}
+
+.advert img {
+  height: 100px;
+  /*object-fit: none;*/
 }
 
 /*.imagerow {
@@ -198,6 +213,7 @@ h2 {
 /*  grid-auto-flow: dense;*/
   width: 95%;
   margin: auto;
+  padding-bottom: 15px;
 }
 
 /* hover styles */
