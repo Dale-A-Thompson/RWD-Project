@@ -127,6 +127,10 @@ nav {
 
 /* Full-width input fields */
 
+form {
+  padding-bottom: 40px;
+}
+
 form .fas { /* color the font awesome icons */
     color: #1db954;
 }
