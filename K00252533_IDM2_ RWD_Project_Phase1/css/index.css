@@ -44,13 +44,11 @@
 
 }
 
-
-
-/*@media screen and (max-width: 479px) {
-    header h1, header h2, header h3, section {
+@media screen and (max-width: 479px) {
+    header h2 {
         font-size: small;
     }
-}*/
+}
 
 * {
 	margin: 0;

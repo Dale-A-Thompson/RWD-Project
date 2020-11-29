@@ -28,6 +28,13 @@
     }
 }
 
+@media screen and (max-width: 479px) {
+    header h2 {
+        font-size: small;
+    }
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
