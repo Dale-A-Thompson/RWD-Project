@@ -1,0 +1,16 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Microsoft\'92s Xbox Series X, the fourth iteration of the Xbox, may be the most powerful home entertainment system ever. It\'92s also at least two years ahead of its time.  The new Xbox brings more computational power than any console in history, yet no games that really necessitate that power. It\'92s like showing up to a party too early for fear of missing out.\
+\
+For almost 20 years, Microsoft\'92s Xbox series has always tried to be ahead of the game. When the original Xbox debuted in November 2001, it was the most powerful unit in that sixth generation of consoles. It was also the very first video game system to feature an internal hard drive, which allowed it to eschew the memory cards needed for players to store their save data on other consoles, and \'97 coupled with the console\'92s DVD player \'97 also hinted at Microsoft\'92s goal of creating the ultimate home entertainment system. From day one, the dream was to fit games, movies, and music all in one (X)box.\
+\
+The Series X feels like nothing less than the culmination of that dream, from design to operating system to unadulterated power. It may not reinvent the wheel, but the machine represents the logical destination of the trajectory that Microsoft has been charting in the video game world for the last two decades, and it fulfills the broad potential that Xbox loyalists have always seen in their brand of choice.\
+\
+But Xbox\'92s need to prove its worth raises questions about the point of all that effort. Yes, you can play \'93optimized\'94 versions of games like \'93Assassin\'92s Creed Valhalla\'94 or \'93Cyberpunk 2077\'94 \'97 which certainly promise to run smoother and at higher frame rates \'97 but whether that justifies the sticker shock is debatable.\
+\
+Make no mistake: Once the future catches up with the present, this Xbox will be a marvel of graphic wizardry. And as an entertainment system, the Series X is essentially a faster, larger Amazon Fire TV Cube or Roku Ultra \'97 that also happens to support the most bleeding edge video game tech. But there\'92s also something bittersweet about bumping up against the ceiling of what a console like this can do, and any celebration of the Xbox Series X comes pre-installed with the feeling that future returns might only diminish from here.}
