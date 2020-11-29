@@ -33,7 +33,7 @@
     }
 
     /* for touch screen devices */
-@media (hover: none) { 
+@media screen and (max-width: 767px; hover: none) { 
   .image-title {
     opacity: 1;
   }
@@ -154,7 +154,7 @@ nav {
 
 /*IMAGE STUFF*/
 .mainarticle img{
-	height: 250px;
+	height: 245px;
 	object-fit: none;
 	object-position: 45% 35%;
 }
@@ -169,6 +169,13 @@ nav {
 
 .advert {
   padding-bottom: 40px;
+}
+
+figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 /*.imagerow {

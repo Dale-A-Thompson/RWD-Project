@@ -11,13 +11,13 @@
         display: none;
     }
 
-    li #clock {
+    /*li #clock {
     	display: none;
     }
-
-    .arrow {
+*/
+    /*.arrow {
     	display: none;
-    }
+    }*/
 
     .slicknav.menu {
         padding: 3px !important;
@@ -28,6 +28,9 @@
     }
 
     /* for touch screen devices */
+
+}
+
 @media (hover: none) { 
   .image-title {
     opacity: 1;
@@ -36,11 +39,14 @@
     filter: blur(2px);
   }
 }
-}
 
 @media screen and (max-width: 479px) {
     header h2 {
         font-size: small;
+    }
+
+    h1 {
+      font-size: large;
     }
 }
 
@@ -148,7 +154,7 @@ nav {
 
 .article-images img {
   width: 100%; /* need to overwrite inline dimensions */
-  height: 85px;
+  height: 80px;
   object-fit: cover;
 }
 
@@ -170,6 +176,13 @@ nav {
 
 h2 {
   margin-bottom: .5em;
+}
+
+figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .grid-container {
