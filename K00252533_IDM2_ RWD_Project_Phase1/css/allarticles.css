@@ -28,10 +28,7 @@
     }
 
     /* for touch screen devices */
-
-}
-
-@media (hover: none) { 
+    @media (hover: none) { 
   .image-title {
     opacity: 1;
   }
@@ -39,6 +36,10 @@
     filter: blur(2px);
   }
 }
+
+}
+
+
 
 @media screen and (max-width: 479px) {
     header h2 {

@@ -33,7 +33,7 @@
     }
 
     /* for touch screen devices */
-@media screen and (max-width: 767px; hover: none) { 
+@media (hover: none) { 
   .image-title {
     opacity: 1;
   }
